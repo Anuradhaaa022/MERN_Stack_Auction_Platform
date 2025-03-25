@@ -6,6 +6,7 @@ const commissionSlice = createSlice({
   name: "commission",
   initialState: {
     loading: false,
+    unpaidCommissionAmount: 0,
   },
   reducers: {
     postCommissionProofRequest(state, action) {

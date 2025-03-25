@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { RiAuctionFill } from "react-icons/ri";
 import { MdLeaderboard, MdDashboard } from "react-icons/md";
 import { SiGooglesearchconsole } from "react-icons/si";
@@ -40,14 +40,14 @@ const SideDrawer = () => {
         <div className="relative">
           <Link to={"/"}>
             <h4 className="text-2xl font-semibold mb-4">
-              Prime<span className="text-[#D6482b]">Bid</span>
+              Prime<span className="text-[#1E3A8A]">Bid</span>
             </h4>
           </Link>
           <ul className="flex flex-col gap-3">
             <li>
               <Link
                 to={"/auctions"}
-                className="flex text-xl font-semibold gap-2 items-center hover:text-[#D6482b] hover:transition-all hover:duration-150"
+                className="flex text-xl font-semibold gap-2 items-center hover:text-[#206088] hover:transition-all hover:duration-150"
               >
                 <RiAuctionFill /> Auctions
               </Link>
@@ -55,7 +55,7 @@ const SideDrawer = () => {
             <li>
               <Link
                 to={"/leaderboard"}
-                className="flex text-xl font-semibold gap-2 items-center hover:text-[#D6482b] hover:transition-all hover:duration-150"
+                className="flex text-xl font-semibold gap-2 items-center hover:text-[#206088] hover:transition-all hover:duration-150"
               >
                 <MdLeaderboard /> Leaderboard
               </Link>
@@ -65,7 +65,7 @@ const SideDrawer = () => {
                 <li>
                   <Link
                     to={"/submit-commission"}
-                    className="flex text-xl font-semibold gap-2 items-center hover:text-[#D6482b] hover:transition-all hover:duration-150"
+                    className="flex text-xl font-semibold gap-2 items-center hover:text-[#206088] hover:transition-all hover:duration-150"
                   >
                     <FaFileInvoiceDollar /> Submit Commission
                   </Link>
@@ -73,7 +73,7 @@ const SideDrawer = () => {
                 <li>
                   <Link
                     to={"/create-auction"}
-                    className="flex text-xl font-semibold gap-2 items-center hover:text-[#D6482b] hover:transition-all hover:duration-150"
+                    className="flex text-xl font-semibold gap-2 items-center hover:text-[#206088] hover:transition-all hover:duration-150"
                   >
                     <IoIosCreate /> Create Auction
                   </Link>
@@ -81,7 +81,7 @@ const SideDrawer = () => {
                 <li>
                   <Link
                     to={"/view-my-auctions"}
-                    className="flex text-xl font-semibold gap-2 items-center hover:text-[#D6482b] hover:transition-all hover:duration-150"
+                    className="flex text-xl font-semibold gap-2 items-center hover:text-[#206088] hover:transition-all hover:duration-150"
                   >
                     <FaEye /> View My Auctions
                   </Link>
@@ -92,7 +92,7 @@ const SideDrawer = () => {
               <li>
                 <Link
                   to={"/dashboard"}
-                  className="flex text-xl font-semibold gap-2 items-center hover:text-[#D6482b] hover:transition-all hover:duration-150"
+                  className="flex text-xl font-semibold gap-2 items-center hover:text-[#206088] hover:transition-all hover:duration-150"
                 >
                   <MdDashboard /> Dashboard
                 </Link>
@@ -131,7 +131,7 @@ const SideDrawer = () => {
               <li>
                 <Link
                   to={"/me"}
-                  className="flex text-xl font-semibold gap-2 items-center hover:text-[#D6482b] hover:transition-all hover:duration-150"
+                  className="flex text-xl font-semibold gap-2 items-center hover:text-[#206088] hover:transition-all hover:duration-150"
                 >
                   <FaUserCircle /> Profile
                 </Link>
@@ -140,7 +140,7 @@ const SideDrawer = () => {
             <li>
               <Link
                 to={"/how-it-works-info"}
-                className="flex text-xl font-semibold gap-2 items-center hover:text-[#D6482b] hover:transition-all hover:duration-150"
+                className="flex text-xl font-semibold gap-2 items-center hover:text-[#206088] hover:transition-all hover:duration-150"
               >
                 <SiGooglesearchconsole /> How it works
               </Link>
@@ -148,7 +148,7 @@ const SideDrawer = () => {
             <li>
               <Link
                 to={"/about"}
-                className="flex text-xl font-semibold gap-2 items-center hover:text-[#D6482b] hover:transition-all hover:duration-150"
+                className="flex text-xl font-semibold gap-2 items-center hover:text-[#206088] hover:transition-all hover:duration-150"
               >
                 <BsFillInfoSquareFill /> About Us
               </Link>
@@ -177,20 +177,12 @@ const SideDrawer = () => {
           </div>
           <Link
             to={"/contact"}
-            className="text-stone-500 font-semibold hover:text-[#d6482b] hover:transition-all hover:duration-150"
+            className="text-stone-500 font-semibold hover:text-[#206088] hover:transition-all hover:duration-150"
           >
             Contact Us
           </Link>
           <p className="text-stone-500">&copy; PrimeBid, LLC.</p>
-          <p className="text-stone-500">
-            Degined By{" "}
-            <Link
-              to={"/"}
-              className="font-semibold hover:text-[#d6482b] hover:transition-all hover:duration-150"
-            >
-              CodeWithZeeshu
-            </Link>
-          </p>
+          
         </div>
       </div>
     </>

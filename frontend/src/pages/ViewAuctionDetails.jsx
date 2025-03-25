@@ -30,14 +30,14 @@ const ViewAuctionDetails = () => {
         <div className="text-[16px] flex flex-wrap gap-2 items-center">
           <Link
             to="/"
-            className="font-semibold transition-all duration-300 hover:text-[#D6482B]"
+            className="font-semibold transition-all duration-300 hover:text-[#206088]"
           >
             Home
           </Link>
           <FaGreaterThan className="text-stone-400" />
           <Link
             to={"/view-my-auctions"}
-            className="font-semibold transition-all duration-300 hover:text-[#D6482B]"
+            className="font-semibold transition-all duration-300 hover:text-[#206088]"
           >
             My Auctions
           </Link>

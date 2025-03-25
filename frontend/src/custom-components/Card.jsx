@@ -54,7 +54,7 @@ const Card = ({ imgSrc, title, startingBid, startTime, endTime, id }) => {
           className="w-full aspect-[4/3] m-auto md:p-12"
         />
         <div className="px-2 pt-4 pb-2">
-          <h5 className="font-semibold text-[18px] group-hover:text-[#d6482b] mb-2">
+          <h5 className="font-semibold text-[18px] group-hover:text-[#206088] mb-2">
             {title}
           </h5>
           {startingBid && (

@@ -18,13 +18,18 @@ config({
   path: "./config/config.env",
 });
 
+
 app.use(
   cors({
-    origin: [process.env.FRONTEND_URL],
-    methods: ["POST", "GET", "PUT", "DELETE"],
-    credentials: true,
+    origin: "http://localhost:5173", // ✅ Your frontend URL
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true, // ✅ Important for cookies & authentication
   })
 );
+
+// ✅ Explicitly handle preflight requests
+app.options("*", cors());
 
 app.use(cookieParser());
 app.use(express.json());
